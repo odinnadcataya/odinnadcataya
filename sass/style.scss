@@ -1,0 +1,42 @@
+html,
+body {
+    height: 100%;
+}
+
+/* body {
+    margin: 0;
+    background: linear-gradient(-45deg, #2980B9, #6DD5FA,#FFFFFF);
+    background-size: 200% 200%; //чтобы анимация появилась задаем размер фона больше чем 100%
+    animation: gradient 10s ease infinite; //подключаем анимацию к body, пишем имя анимации, время, функция анимации и цикл повторения (бесконечная, все время будет повторяться)
+} */
+
+@keyframes gradient {
+    //анимация, gradient имя анимации
+    0% {
+        background-position: 0 50%; //по оси x 0, по оси y 50%
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.body {
+    background-color: #00bf53;
+    background-image: url(/img/basketball.png);
+    &__color {
+        margin: 50px auto;
+        max-width: 400px;
+        min-height: 400px;
+        background: linear-gradient(-45deg, #1e9600, #fff200, #c011b7);
+        background-size: 200% 200%;
+        animation: gradient 10s ease infinite;
+        border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+        /* border: 1px solid #000; */
+        box-shadow: 8px 10px 8px 4px #95339e;
+
+        
+    }
+}

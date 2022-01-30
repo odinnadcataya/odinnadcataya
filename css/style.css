@@ -1,0 +1,57 @@
+@charset "UTF-8";
+html,
+body {
+  height: 100%;
+}
+
+/* body {
+    margin: 0;
+    background: linear-gradient(-45deg, #2980B9, #6DD5FA,#FFFFFF);
+    background-size: 200% 200%; //чтобы анимация появилась задаем размер фона больше чем 100%
+    animation: gradient 10s ease infinite; //подключаем анимацию к body, пишем имя анимации, время, функция анимации и цикл повторения (бесконечная, все время будет повторяться)
+} */
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.body {
+  background-color: #00bf53;
+  background-image: url(/img/basketball.png);
+}
+
+.body__color {
+  margin: 50px auto;
+  max-width: 400px;
+  min-height: 400px;
+  background: -webkit-linear-gradient(135deg, #1e9600, #fff200, #c011b7);
+  background: -o-linear-gradient(135deg, #1e9600, #fff200, #c011b7);
+  background: linear-gradient(-45deg, #1e9600, #fff200, #c011b7);
+  -webkit-background-size: 200% 200%;
+          background-size: 200% 200%;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
+  -webkit-border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+          border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+  /* border: 1px solid #000; */
+  -webkit-box-shadow: 8px 10px 8px 4px #95339e;
+          box-shadow: 8px 10px 8px 4px #95339e;
+}
